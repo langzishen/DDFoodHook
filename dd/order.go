@@ -117,17 +117,7 @@ func (s *DingdongSession) CheckOrder() error {
 	req.Header.Set("ddmc-os-version", "undefined")
 	req.Header.Set("ddmc-channel", "undefined")
 	req.Header.Set("ddmc-build-version", "2.81.0")
-	req.Header.Set("content-type", "application/x-www-form-urlencoded")
-	req.Header.Set("ddmc-app-client-id", "3")
-	req.Header.Set("ddmc-api-version", "9.49.0")
-	req.Header.Set("ddmc-station-id", s.Address.StationId)
-	req.Header.Set("origin", "https://wx.m.ddxq.mobi")
-	req.Header.Set("x-requested-with", "com.yaya.zone")
-	req.Header.Set("sec-fetch-site", "same-site")
-	req.Header.Set("sec-fetch-mode", "cors")
-	req.Header.Set("sec-fetch-dest", "empty")
-	req.Header.Set("referer", "https://wx.m.ddxq.mobi/")
-	req.Header.Set("accept-language", "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7")
+
 	req.Header.Set("cookie", s.Cookie)
 	resp, err := s.Client.Do(req)
 	if err != nil {
