@@ -50,7 +50,9 @@ func (s *DingdongSession) InitSession(cookie string, barkId string) error {
 		}
 	}
 	s.Address = addrList[index]
+	fmt.Println("########## 选择支付方式 ##########")
 	for true {
+		fmt.Println("请输入支付方式序号（1：支付宝 2：微信)：")
 		stdin := bufio.NewReader(os.Stdin)
 		_, err := fmt.Fscanln(stdin, &index)
 		if err != nil {
