@@ -9,7 +9,7 @@ import (
 
 func main() {
 	session := dd.DingdongSession{}
-	err := session.InitSession("DDXQSESSID=2837163186318361", "jshgdjag2yq8eqe")
+	err := session.InitSession("DDXQSESSID=xxxxxxxxxxx", "xxxxxxxxxxxxx")
 	if err != nil {
 		fmt.Println(err)
 		return
